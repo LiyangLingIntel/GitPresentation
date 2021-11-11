@@ -1,22 +1,46 @@
 # Git Merge v.s. Git Rebase
 
-1. 介绍主题
-    drama的名字，学习生活，对git使用工作流的理解
+1. 
+大家好，很高兴今天可以在这里和大家分享一些关于git merge 和 git rebase的故事。
+这里我起了一个比较drama的名字哈，其实也没有什么特别的含义，主要是想吸引大家的眼球，另一方面我确实也发现
+行业里（除了我们公司，还有其他公司以及网上论坛）大家对 merge 和 rebase的使用选择有一些值得讨论的地方。
+这里呢，就结合我的学习和工作，谈一谈在git工作流中，对merge和rebase的理解。
 
-2. git / github / gitlab / gitee 区别与联系
+2.
+首先，简单介绍一下背景。
+什么 Git？Git 是当下软件开发行业中最火的代码版本管理和团队协作工具。
+而我们常见的 github gitlab gitee 这些是基于 git 打造的代码托管平台。只是大家的侧重点不同。
+比如 github 注重构建代码开源社区，gitlab 则是提供企业服务，而 gitee 以及等等同类产品则是在上面两个
+因为种种原因都用不了的时候，提供一些其他的选择吧。。。
 
-3. 一句话解释git merge & git rebase
+3. 
+所以回归主题，什么是 git merge 和 git rebase 呢？
+用一句话解释，merge 就是把别人branch的更新添加到自己的 branch 上，而 reabse 呢，是把branch上自己的改动
+放到别人的 branch 上。这里两张图可以很直观的说明这个特点。
 
-4. git merge
-    * 从学习和实习的经历介绍与git merge相遇相知
-        single branch & only merge
-    * 深入了解git merge --> merge 的问题
+接下来呢，我们就慢慢详细展开对 merge 和 rebase 的解读。
 
-5. git rebase
-    * 与rebase的相识与相爱
-    * 详细解释rebase的好处
+4. 
+不知道大家是什么时候接触Git的，实不相瞒，在正式来Intel工作之前，我其实是从没使用过rebase这个命令的。
+~
+。。。
+git merge vs git merge --no-ff vs git merge --squash
 
-6. 理性讨论 pros and cons (重点)
+基于 merge 的这个特点，在没有良好的分支管理情况下，merge 被滥用，会出现什么情况呢？
+知道的，能看出来这个是 软件开发的 git history graph，不知道的第一眼可能还以为是硬件工程师画的电路图。
 
-7. 可能合适的 git 工作流
-    工具是既定的，开发者是灵活的
+试想，当接手一个项目，发现他的历史记录是这样的。。。当时的心情，emmmmm（换页）
+可能也除了无语也是无语吧。短短几分钟就能体验项目从上手到放弃的大起大落。
+
+所以！为了不陷入Merge造成的陷阱，所以我们之前做 Clean Code training 的时候，也是要求大家尽可能取用
+rebase。
+
+5. 
+
+Rebase
+
+7. 
+其实我还参考散落在各个大厂同学，他们在项目中git的使用习惯。
+其实有一部分的大厂项目还是基于全部默认merge的形式，有一些代码管理习惯好的同学会要求所在项目用rebase的模式开发，
+再通过merge合并。也有一部分项目，他们的要求是不管个人还是远程全部都按照rebase的形式合并更新，最后的 git graph 
+就是一条只出不进的树，可能在某种程度上也是master也是一种极致的clean吧。
