@@ -25,6 +25,10 @@
 ~
 。。。
 git merge vs git merge --no-ff vs git merge --squash
+可以看到，不管。。。
+好处是可以清楚记录branch之间合并的历史，问题在于这样的历史大多数时候意义不大，甚至会带来较多的冗余
+
+所以linux也是git之父 暴躁老哥 linus 也说。。。
 
 基于 merge 的这个特点，在没有良好的分支管理情况下，merge 被滥用，会出现什么情况呢？
 知道的，能看出来这个是 软件开发的 git history graph，不知道的第一眼可能还以为是硬件工程师画的电路图。
@@ -36,8 +40,9 @@ git merge vs git merge --no-ff vs git merge --squash
 rebase。
 
 5. 
-
 Rebase
+
+好用的工具也要配套优秀的使用机制
 
 7. 
 其实我还参考散落在各个大厂同学，他们在项目中git的使用习惯。
