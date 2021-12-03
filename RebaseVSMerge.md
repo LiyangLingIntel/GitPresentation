@@ -5,8 +5,9 @@ presentation:
 ---
 
 <!-- slide -->
-## Git Merge & Git Rebase 
-## 爱 恨 情 仇
+## Love Song
+#### of
+### Git Merge & Git Rebase 
 <br/>
 ##### Present by: Liyang
 
@@ -14,11 +15,7 @@ presentation:
 @import "./assets/git.png" {width="30%"}
 
 <!-- slide -->
-@import "./assets/github.jpg" {width="40%"}
-<br/>
-@import "./assets/gitlab.png" {width="40%"}
-<br/>
-@import "./assets/gitee.png" {width="40%"}
+### Branching Strategy
 
 <!-- slide -->
 @import "./assets/merge.svg" {width="49%"}
@@ -28,12 +25,19 @@ presentation:
 ### 初识 Git & Git Merge
 
 <!-- slide -->
+#### Git Merge
+@import "./assets/merge.svg" {width="80%"}
+
+<!-- slide -->
 @import "./assets/merge-options.png" 
 
 <!-- slide -->
-* 非破坏性 - 保留已有分支结构
 
-* 污染自己的分支记录
+#### Pros
+* Keep existing commits history
+<p></p>
+#### Cons
+* Pollute local branch
 
 <!-- slide -->
 @import "./assets/linus.png" {width="80%"}
@@ -44,7 +48,7 @@ I really don't want to see - github creates absolutely useless garbage merges.
 @import "./assets/garbage_merge.png"
 
 <!-- slide -->
-### 如果 Merge 被滥用？
+### If Merge is abused？
 
 <!-- slide -->
 @import "./assets/git-graph.jpg"
@@ -59,17 +63,20 @@ I really don't want to see - github creates absolutely useless garbage merges.
 ### 拥抱 Rebase
 
 <!-- slide -->
-**来自网上的讨论**
-* Rebase 的危害？
-* 不要轻易使用 Rebase
-* 切记：永远用rebase!
+**Some discussion topic from the Internet**
+* The Danger of Rebase？
+* Do not adopt Rebase easily!
+* Remember：always adopt rebase!
 
 <!-- slide -->
-@import "./assets/merge.svg" {width="49%"}
-@import "./assets/rebase.svg" {width="49%"}
+#### Git Rebase
+@import "./assets/rebase.svg" {width="80%"}
 
 <!-- slide -->
+#### Pros
 * 干净、线性历史记录
+<p></p>
+#### Cons
 * `> git push --force`
   *  改动丢失风险
   *  冲突解决成本
@@ -88,9 +95,9 @@ I really don't want to see - github creates absolutely useless garbage merges.
 @import "./assets/clean-graph.png" {width="80%"}
 
 <!-- slide -->
-### 实际项目中的问题
+### Problems in Actual Projects
 <!-- slide -->
-### 解决 rebase 冲突的代价
+#### The price of resolving conflicts
 
 <!-- slide -->
 ### commit hash & CI
@@ -105,6 +112,11 @@ I really don't want to see - github creates absolutely useless garbage merges.
 
 <!-- slide -->
 ### Any other choices?
+
+<!-- slide -->
+#### **A good develop process**
+* Good tool and machanism
+* Developer's consensus and strict compliance
 
 <!-- slide -->
 ## Thanks
