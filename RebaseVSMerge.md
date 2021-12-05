@@ -22,7 +22,7 @@ presentation:
 @import "./assets/rebase.svg" {width="49%"}
 
 <!-- slide -->
-### 初识 Git & Git Merge
+### Encounter Git & Git Merge
 
 <!-- slide -->
 #### Git Merge
@@ -57,10 +57,10 @@ I really don't want to see - github creates absolutely useless garbage merges.
 @import "./assets/tuboshu.gif"
 
 <!-- slide -->
-### 眼不见心不烦？
+### Out of sight out of mind？
 
 <!-- slide -->
-### 拥抱 Rebase
+### Embrace Rebase
 
 <!-- slide -->
 **Some discussion topic from the Internet**
@@ -74,41 +74,70 @@ I really don't want to see - github creates absolutely useless garbage merges.
 
 <!-- slide -->
 #### Pros
-* 干净、线性历史记录
+* Clean and beautiful graph
 <p></p>
 #### Cons
 * `> git push --force`
-  *  改动丢失风险
-  *  冲突解决成本
+  *  Loss changes
+* High resolving conflict price
+* Unstable master(used on master)
+
 
 <!-- slide -->
 <p> -- 《Pro Git》 </p>
 @import "./assets/golden_rule.png" {width="100%"}
 
 <!-- slide -->
-* imdependent task branch
-* task owner finish task independently
+**Task branch** 
+* **comes** from **master** and go into **master**
+* finished independently
 * rebase lastest master before merge
-* merge branch into master
 
 <!-- slide -->
 @import "./assets/clean-graph.png" {width="80%"}
 
 <!-- slide -->
 ### Problems in Actual Projects
+
 <!-- slide -->
 #### The price of resolving conflicts
+
+<!-- slide -->
+### Unstable master
+Before rebase
+```
+  A3  B2
+  |   |
+  A2  B1 -- has not run CI (may not build at all)
+  |---+
+  A1
+```
+
+<!-- slide -->
+### Unstable master
+After rebase
+```
+B2'
+|
+B1' -- broken commit on master(!)
+| 
+A3
+| 
+A2
+|
+A1
+```
 
 <!-- slide -->
 ### commit hash & CI
 
 <!-- slide -->
-* Imdependent task branch
-* Task owner finish task independently
+Task branch 
+* Comes from **master** and go into **master**
+* Finished independently
 * Rebase lastest master before submit for review 
   **in develop stage**
 * **Merge lastest master before merge**
-* Merge branch into master
 
 <!-- slide -->
 ### Any other choices?

@@ -30,3 +30,11 @@
 * 演讲流程线索不清晰
 * 最好更加关注 merge 和 rebase 本身的使用和解析
 * 需要突出中心思想，需要一页 take off 来总结
+
+20211203 - second group presenting
+* 给具体一些case添加图例，讲清楚具体场景
+  * out of sight out of mind?
+  * unstable master 
+* 收尾需要呼应，稍微体现 love song 的前后剧情
+* Commit Hash 这一节需要讲清楚，尽量简化复杂度
+* 部分文本对齐
