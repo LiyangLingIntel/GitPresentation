@@ -38,3 +38,4 @@
 * 收尾需要呼应，稍微体现 love song 的前后剧情
 * Commit Hash 这一节需要讲清楚，尽量简化复杂度
 * 部分文本对齐
+* git push --force 需要解释，在合作时应该尽可能避免 force push
