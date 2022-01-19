@@ -40,3 +40,4 @@
 * 部分文本对齐
 * 图片字体太小
 * pros and cons balance
+* git push --force 需要解释，在合作时应该尽可能避免 force push
