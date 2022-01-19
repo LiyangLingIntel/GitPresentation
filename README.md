@@ -38,3 +38,5 @@
 * 收尾需要呼应，稍微体现 love song 的前后剧情
 * Commit Hash 这一节需要讲清楚，尽量简化复杂度
 * 部分文本对齐
+* 图片字体太小
+* pros and cons balance
