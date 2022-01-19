@@ -65,7 +65,7 @@ presentation:
 
 <!-- slide -->
 Example - switch base branch
-@import "./assets/switch_base.png"
+@import "./assets/switch_base.png" {width="40%"}
 
 <!-- slide -->
 ### Embrace Rebase
